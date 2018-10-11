@@ -1,0 +1,16 @@
+.Person {
+  width: 60%;
+  margin: 16px auto;
+  border: 1px solid #eee;
+  box-shadow: 0 2px 3px #ccc;
+  padding: 16px;
+  text-align: center;
+}
+
+/* Below basically means that for 500px OR ABOVE viewport then make the width 450px.
+   This overrides the 60% width defined above, which will kick in under the 700px media thredshold */
+@media (min-width: 700px) {
+  .Person {
+    width: 300px;
+  }
+}
